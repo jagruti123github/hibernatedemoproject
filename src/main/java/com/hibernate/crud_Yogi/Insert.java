@@ -16,7 +16,8 @@ public class Insert {
 		
 		Employee employee = new Employee(); employee.setEmp_name("Yogeshwari");
 		employee.setEmp_state("Maharashtra"); 
-		Transaction transaction = session.beginTransaction(); session.save(employee);
+		Transaction transaction = session.beginTransaction();
+		session.save(employee);
 		System.out.println("Employee resister successfully");
 		System.out.println(employee); 
 		transaction.commit();
